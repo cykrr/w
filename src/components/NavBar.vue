@@ -44,8 +44,8 @@ export default {
 #nav-bar {
   top: 20px;
   border-radius: 50px;
-  width: 96%;
-  left: 2%;
+  width: 96vw;
+  left: 2vw;
   filter: drop-shadow(5px 5px 10px #707070);
   }
 #sandwich {

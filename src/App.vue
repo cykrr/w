@@ -5,27 +5,36 @@ import NoteFrame from './components/NoteFrame.vue';
 
 <template>
   <NavBar/>
-
-  <NoteFrame title = "I am safe in my box">I'm smol</NoteFrame>
-  <NoteFrame title = "I am far beyond you">
-    I am
-    <br>
-    the largest
-    <br>
-    note
-    <br>
-    in this universe
-    <br>
-    also the skinnier
-    <br>
-    one.
-  </NoteFrame>
+  <div id = "note-holder">
+    <NoteFrame title = "I am safe in my box">I'm smol</NoteFrame>
+    <NoteFrame title = "I am safe in my box">I'm smol too</NoteFrame>
+    <NoteFrame title = "I am so far beyond you">
+      I am
+      <br>
+      the largest
+      <br>
+      note
+      <br>
+      in this universe
+      <br>
+      also the skinnier
+      <br>
+      one.
+    </NoteFrame>
+  </div>
 </template>
 
 <style scoped>
-#app, body {
-    padding-top: 40px;
-    width: 100%;
+html, body {
+    height: 100%;
   }
 
+h2 {
+  font-weight: 700;
+}
+
+#note-holder {
+  display:flex;
+  position:relative;
+}
 </style>
